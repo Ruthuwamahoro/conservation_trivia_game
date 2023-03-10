@@ -1,0 +1,64 @@
+print("welcome to this wonderful game")
+print("Hello!You can get the best score in this travia game")
+print("we have a series of questions.and choose categories of questions that you want to work on")
+print("1.conservation\n2.Endangered species\n3.Poaching and Hunting Prevention")
+choice=input("Enter your favourate choice:")
+score=0
+while True:
+    if choice == '1':
+        print("what is conservation?")
+        print("1.preservation,protection,restoration of the natural environment")
+        print("2.protection of environment")
+        print("3.All of the above")
+        print("4.one of the above")
+        question_1= input("Please enter your answer:")
+        if  question_1 == '3':
+            print("congraturations")
+            score+=1
+            print("score:",score)
+
+        else:
+            print("incorrect answer")
+            score == score
+            print("score:",score)
+    wish=input("Do you want to continue to the next choice ?please type 'Y' if you want to continue the next choice or 'N' if you want to exit the game: ")
+    if wish == 'N':
+        print("Thank you,we hope that you enjoyed the game")
+        print("your overall score:", score)
+        break
+
+    elif (choice == '2') or (wish == 'Y'):
+        print("welcome to the question on endagered species")
+        print("what is endagered species")
+        print("1.is species with backbone.\n2.is a species that are likely to become extinct in the near future.\n3.are a species that are living in forest.")
+        question_2=input("please enter your answer:")
+        if question_2 == '2':
+            print("congraturations")
+            score+=1
+            print("score:",score)
+
+        else:
+            print("incorrect answer")
+            score == score
+            print("score:",score)
+    wish = input("Do you want to continue to the next choice ?please type 'Y' if you want to continue the next choice or 'N' if you want to exit the game: ")
+    if wish == 'N':
+        print("Thank you,we hope that you enjoyed the game")
+        print("your overall score:", score)
+        break
+    elif (choice == '3') or (wish == 'Y'):
+        print("how to prevent poaching and hunting?.\n1.Making sensors that detect the poachers around the forest.\n2.Giving reward to poachers.\n3.establishing rules and regulations.\n4.None of the above.\n5. Both 1 and 3 are correct answers.")
+        question_3=input("Please enter your answer:")
+        if question_3 == '5':
+            print("congraturations")
+            score += 1
+            print("score:",score)
+        else:
+            print("incorect answer")
+            score == score
+            print('score:',score)
+    wish = input("Do you want to continue repeat the game ?please type 'Y' if you want to continue  or 'N' if you want to exit the game: ")
+    if wish == 'N':
+        print("Thank you,we hope that you enjoyed the game")
+        print("your overall score:",score)
+        break
